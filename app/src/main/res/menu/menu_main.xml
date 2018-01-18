@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Cari Lokasi" />
+    <item
+        android:id="@+id/menu_search_halte"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_youtube_searched_for_black_24dp"
+        android:title="Rute Halte" />
+    <item
+        android:id="@+id/menu_list"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:title="Daftar Halte" />
+    <item
+        android:id="@+id/menu_more"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:title="Lainnya" />
+</menu>

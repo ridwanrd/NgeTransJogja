@@ -1,0 +1,46 @@
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TitleFormText" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/grey_500</item>
+        <item name="android:textSize">@dimen/subtitle_text</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="MiniText" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/grey_500</item>
+        <item name="android:textSize">@dimen/subtitle_text</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="StandardText" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="CostumTabSize" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="generalnotitle" parent="Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

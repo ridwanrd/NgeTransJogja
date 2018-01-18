@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_form_input"
+    android:focusable="true" android:focusableInTouchMode="true">
+    <ImageView
+        android:tint="@color/icon"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_black_24dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageView" />
+    <EditText
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:id="@+id/form_input_edt"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/icon"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/form_input_close" />
+</RelativeLayout>

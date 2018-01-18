@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ridwan.skripsi.com.pencarianhalte.Pages.PencarianRuteHaltePage">
+    <include
+    layout="@layout/layout_toolbar_default" />
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll"
+                app:statusBarScrim="@android:color/transparent"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title">
+                <LinearLayout
+                    android:elevation="12dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/background"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.3"
+                    android:padding="@dimen/padding_default"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            style="@style/TitleFormText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Halte Asal" />
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/pencarian_rute_halte_asal"
+                            android:clickable="true"
+                            android:orientation="horizontal" android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_form_input">
+                            <ImageView
+                                android:id="@+id/pencarian_rute_halte_asal_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tint="@android:color/holo_red_dark"
+                                android:src="@drawable/ic_subdirectory_arrow_right_black_24dp"
+                                android:paddingRight="@dimen/padding_default"
+                                android:layout_centerVertical="true" />
+                            <TextView
+                                style="@style/StandardText"
+                                android:text="Prambanan"
+                                android:layout_toRightOf="@+id/pencarian_rute_halte_asal_icon"
+                                android:id="@+id/pencarian_rute_halte_asal_txt"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/pencarian_rute_halte_asal_id"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/TitleFormText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Halte Tujuan" />
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/pencarian_rute_halte_tujuan"
+                            android:clickable="true"
+                            android:orientation="horizontal" android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_form_input">
+                            <ImageView
+                                android:id="@+id/pencarian_rute_halte_tujuan_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tint="@android:color/holo_blue_dark"
+                                android:src="@drawable/ic_subdirectory_arrow_left_black_24dp"
+                                android:paddingRight="@dimen/padding_default"
+                                android:layout_centerVertical="true" />
+                            <TextView
+                                style="@style/StandardText"
+                                android:layout_toRightOf="@+id/pencarian_rute_halte_tujuan_icon"
+                                android:id="@+id/pencarian_rute_halte_tujuan_txt"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:text="Prambanan"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/pencarian_rute_halte_tujuan_id"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/pencarian_rute_halte_btn"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="CARI"/>
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <include
+            layout="@layout/layout_noconnection" />
+        <include
+            layout="@layout/layout_waiting_progress" />
+        <include
+            layout="@layout/layout_nofound_text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pencarian_rute_halte_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

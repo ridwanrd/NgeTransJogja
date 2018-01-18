@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ridwan.skripsi.com.pencarianhalte.Pages.PencarianPage">
+    <include
+        layout="@layout/layout_toolbar_default" />
+    <LinearLayout
+        android:elevation="12dp"
+        android:background="@drawable/shadow_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bar_height"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/progress_page_info"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/progress_page_info_icon"
+                android:tint="@color/icon"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_info_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cari lokasi tujuan dengan memasukkan kata kunci pada bagian pencarian"/>
+        </LinearLayout>
+        <include layout="@layout/layout_nofound_text" />
+        <include
+            layout="@layout/layout_noconnection" />
+        <include
+            layout="@layout/layout_waiting_progress" />
+        <include
+            layout="@layout/layout_not_reached" />
+        <include
+            layout="@layout/pencarian_result" />
+        <!--<include
+            layout="@layout/layout_progress_page_detail" />-->
+    </RelativeLayout>
+</LinearLayout>

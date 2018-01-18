@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lets Busway</string>
+
+    <string name="error_connection">Koneksi bermasalah</string>
+    <string name="no_internet">Tidak ada koneksi internet</string>
+
+    <string name="waiting_text">Tunggu Sebentar</string>
+
+    <string name="nodata_text">Data tidak tersedia</string>
+    <string name="nofound_text">Data tidak ditemukan</string>
+    <string name="google_maps_key">AIzaSyCkKmg0OQXfGpi0qar3yn-XlJJRtUG3mE0</string>
+
+    <string name="about_text">
+        LETS BUSWAY merupakan aplikasi berbasis Android yang digunakan untuk memudahkan Anda menentukan rute halte transjogja terdekat yang harus Anda lalui ke lokasi tujuan Anda.
+    </string>
+</resources>
